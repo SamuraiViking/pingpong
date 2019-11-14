@@ -1,11 +1,13 @@
 import React from 'react';
 import './css/tailwind.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Login from './Login'
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="bg-purple-500">TailWind</h1>
-    </div>
+    <Router>
+      <Route path="/login" component={Login} />
+    </Router>
   );
 }
 
