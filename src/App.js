@@ -6,7 +6,9 @@ import Login from './Login'
 function App() {
   return (
     <Router>
-      <Route path="/login" component={Login} />
+      <div className="bg-gray-300 h-screen">
+        <Route path="/login" component={Login} />
+      </div>
     </Router>
   );
 }
